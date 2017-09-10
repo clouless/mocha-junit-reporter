@@ -183,9 +183,9 @@ MochaJUnitReporter.prototype.getTestcaseData = function(test, err) {
   var config = {
     testcase: [{
       _attr: {
-        name: test.fullTitle(),
+        classname: test.fullTitle(),
         time: (typeof test.duration === 'undefined') ? 0 : test.duration / 1000,
-        classname: test.title
+        name: test.title
       }
     }]
   };
